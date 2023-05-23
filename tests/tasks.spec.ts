@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test('deve poder cadastrar uma nova tarefa', async ({ page }) =>{
-    await page.goto('http://localhost:3000');length
+    await page.goto('http://localhost:3000');
 
     const inputTaskName = page.locator('input[class*=InputNewTask]')
     await inputTaskName.fill('Task 1');
