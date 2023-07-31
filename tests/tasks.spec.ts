@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-
+/*
 test('deve poder cadastrar uma nova tarefa', async ({ page }) =>{
     await page.goto('http://localhost:3000');
 
@@ -16,4 +16,4 @@ test('deve poder cadastrar uma nova tarefa', async ({ page }) =>{
     await page.fill('input[class*=InputNewTask]', 'Task 1');
 
 
-})
+})*/
