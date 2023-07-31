@@ -23,6 +23,7 @@ test('Login success', async ({ page }) => {
     await page.fill('#username',`${username}`);
     await page.fill('#password',`${password}`);
     await page.getByRole('button', {name:'Acessar'}).click();
+    await page.getByRole('alert', {name : 'Usuário logado com sucesso'});
 });
 
 /**
@@ -32,5 +33,6 @@ test('Login failed', async ({ page }) => {
     await page.goto(`https://${domain}.vitaverse.com.br`);
     await page.fill('#username',`${username}`);
     await page.fill('#password',`${failedPassword}`);
-    await page.getByRole('button', {name:'Acessar'}).click();
+    await page.getByRole('button', {name : 'Acessar'}).click();
+    await page.getByRole('alert', {name : 'Usuário ou senha inválidos!'});
 });
